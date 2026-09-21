@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202225"
+    android:fillViewport="true"
+    android:contentDescription="@string/add_assignment"
+    tools:context=".AddAssignmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_assignment"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_assignment_details"
+            android:textColor="#B9BBBE"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="25dp" />
+
+
+        <!-- COURSE NAME -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_course_name"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="7dp" />
+
+        <EditText
+            android:id="@+id/courseInput"
+            android:nextFocusForward="@id/assignmentTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/hint_course_example"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8F9297"
+            android:backgroundTint="#5865F2"
+            android:inputType="textCapCharacters"
+            android:autofillHints="none"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- ASSIGNMENT TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_assignment_title"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="7dp" />
+
+        <EditText
+            android:id="@+id/assignmentTitleInput"
+            android:nextFocusForward="@id/dueDateButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/hint_title_example"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8F9297"
+            android:backgroundTint="#5865F2"
+            android:inputType="textCapSentences"
+            android:autofillHints="none"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- DUE DATE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_due_date"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="7dp" />
+
+        <Button
+            android:id="@+id/dueDateButton"
+            android:nextFocusForward="@id/prioritySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/select_due_date"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:backgroundTint="#4F545C"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- PRIORITY -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_priority"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="7dp" />
+
+        <Spinner
+            android:id="@+id/prioritySpinner"
+            android:nextFocusForward="@id/notesInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="#5865F2"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- NOTES -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_notes"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="7dp" />
+
+        <EditText
+            android:id="@+id/notesInput"
+            android:nextFocusForward="@id/saveAssignmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="@string/hint_notes"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8F9297"
+            android:backgroundTint="#5865F2"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:autofillHints="none"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp" />
+
+
+        <!-- SAVE BUTTON -->
+
+        <Button
+            android:id="@+id/saveAssignmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/save_assignment"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#5865F2"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- DELETE BUTTON -->
+
+        <Button
+            android:id="@+id/deleteAssignmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/btn_delete"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4F545C"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- CANCEL / BACK -->
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/back_to_dashboard"
+            android:textColor="#B9BBBE"
+            android:textSize="14sp"
+            android:backgroundTint="#292B2F" />
+
+    </LinearLayout>
+
+</ScrollView>

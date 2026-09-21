@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202225"
+    android:fillViewport="true"
+    android:contentDescription="@string/settings_title"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- HEADER -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_subtitle"
+            android:textColor="#B9BBBE"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="25dp" />
+
+
+        <!-- PROFILE SECTION -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_profile"
+            android:textColor="#B9BBBE"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#292B2F"
+            android:padding="15dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:text="S"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#5865F2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:id="@+id/usernameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Study Planner Account"
+                    android:textColor="#B9BBBE"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- NOTIFICATION SETTINGS -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTIFICATIONS"
+            android:textColor="#B9BBBE"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#292B2F"
+            android:paddingStart="15dp"
+            android:paddingEnd="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMS Notifications"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receive assignment reminders by text"
+                    android:textColor="#B9BBBE"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp" />
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/smsNotificationSwitch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:contentDescription="Enable SMS notifications" />
+
+        </LinearLayout>
+
+
+        <!-- NOTIFICATION INFO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#303238"
+            android:padding="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS Permission"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Study Planner needs permission to send text messages. You can continue using the app if permission is denied."
+                android:textColor="#B9BBBE"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:id="@+id/manageSmsPermissionButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="MANAGE SMS PERMISSION"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:backgroundTint="#4F545C"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+
+        <!-- APPEARANCE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP"
+            android:textColor="#B9BBBE"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#292B2F"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dark Theme"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <Switch
+                android:id="@+id/darkThemeSwitch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:checked="true"
+                android:contentDescription="Dark theme enabled" />
+
+        </LinearLayout>
+
+
+        <!-- LOGOUT -->
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="LOG OUT"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4F545C"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- BACK -->
+
+        <Button
+            android:id="@+id/backToDashboardButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="BACK TO DASHBOARD"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#5865F2"
+            android:layout_marginBottom="15dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

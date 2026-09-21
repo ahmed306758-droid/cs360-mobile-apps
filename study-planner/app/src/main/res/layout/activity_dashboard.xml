@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#202225"
+    android:padding="18dp"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_assignments"
+                android:textColor="#B9BBBE"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/icon_settings"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:backgroundTint="#4F545C"
+            android:contentDescription="@string/settings_desc" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upcoming_assignments"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Database-backed grid -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#303238"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1.5" android:text="@string/header_course" android:textColor="#B9BBBE"
+            android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="2" android:text="@string/header_assignment" android:textColor="#B9BBBE"
+            android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1.3" android:text="@string/header_due" android:textColor="#B9BBBE"
+            android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1.2" android:text="@string/header_priority" android:textColor="#B9BBBE"
+            android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:layout_width="48dp" android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:contentDescription="@string/assignments_title">
+
+        <LinearLayout
+            android:id="@+id/assignmentGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addAssignmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/add_assignment_caps"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="#5865F2"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:nextFocusForward="@id/homeButton" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#292B2F"
+        android:padding="4dp">
+
+        <Button android:id="@+id/homeButton" android:layout_width="0dp" android:layout_height="55dp"
+            android:layout_weight="1" android:text="@string/nav_home" android:textColor="#FFFFFF"
+            android:textSize="11sp" android:textStyle="bold" android:backgroundTint="#5865F2" />
+        <Button android:id="@+id/calendarButton" android:layout_width="0dp" android:layout_height="55dp"
+            android:layout_weight="1" android:text="@string/nav_calendar" android:textColor="#B9BBBE"
+            android:textSize="11sp" android:backgroundTint="#292B2F" />
+        <Button android:id="@+id/completedButton" android:layout_width="0dp" android:layout_height="55dp"
+            android:layout_weight="1" android:text="@string/nav_done" android:textColor="#B9BBBE"
+            android:textSize="11sp" android:backgroundTint="#292B2F" />
+        <Button android:id="@+id/settingsNavButton" android:layout_width="0dp" android:layout_height="55dp"
+            android:layout_weight="1" android:text="@string/nav_settings" android:textColor="#B9BBBE"
+            android:textSize="11sp" android:backgroundTint="#292B2F" />
+    </LinearLayout>
+</LinearLayout>

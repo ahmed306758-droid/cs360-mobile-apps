@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202225"
+    android:fillViewport="true"
+    tools:context=".SMSNotificationsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Notifications"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay updated about important assignment deadlines."
+            android:textColor="#B9BBBE"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp" />
+
+
+        <!-- PHONE / SMS ICON AREA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#303238"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="SMS"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#5865F2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Study Planner Messages"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+
+        <!-- PERMISSION STATUS -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERMISSION STATUS"
+            android:textColor="#B9BBBE"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#292B2F"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/smsStatusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SMS Permission: Not Granted"
+                android:textColor="#FFB347"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/statusIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF"
+                android:textColor="#FFB347"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- VISIBLE RESPONSE TO THE USER'S PERMISSION CHOICE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#303238"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PERMISSION RESPONSE"
+                android:textColor="#B9BBBE"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/smsResponseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checking SMS permission..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="7dp" />
+        </LinearLayout>
+
+
+        <!-- INFORMATION -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABOUT SMS NOTIFICATIONS"
+            android:textColor="#B9BBBE"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#292B2F"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Study Planner can send automated text reminders about upcoming assignments."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You must allow SMS permission before the app can send these messages."
+                android:textColor="#B9BBBE"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+
+        <!-- NOTIFICATION OPTIONS -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTIFICATION OPTIONS"
+            android:textColor="#B9BBBE"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#292B2F"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assignment Reminders"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receive reminders for upcoming deadlines"
+                    android:textColor="#B9BBBE"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/assignmentReminderSwitch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:contentDescription="Enable assignment reminders" />
+
+        </LinearLayout>
+
+
+        <!-- ALLOW BUTTON -->
+
+        <Button
+            android:id="@+id/requestSmsPermissionButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="ALLOW SMS NOTIFICATIONS"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#5865F2"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- DENIED INFORMATION -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you deny SMS permission, Study Planner will continue to work normally. You simply will not receive text message reminders."
+            android:textColor="#8F9297"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginBottom="15dp" />
+
+
+        <!-- BACK BUTTON -->
+
+        <Button
+            android:id="@+id/backToSettingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="BACK TO SETTINGS"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4F545C" />
+
+    </LinearLayout>
+
+</ScrollView>

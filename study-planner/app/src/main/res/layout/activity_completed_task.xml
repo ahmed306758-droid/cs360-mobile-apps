@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#202225"
+    android:padding="18dp"
+    tools:context=".CompletedTasksActivity">
+
+    <!-- HEADER -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed Tasks"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep track of your completed work"
+                android:textColor="#B9BBBE"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/completedSettingsButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="⚙"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:backgroundTint="#4F545C"
+            android:contentDescription="Settings" />
+
+    </LinearLayout>
+
+
+    <!-- SUMMARY -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#303238"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="#5865F2"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed Assignments"
+            android:textColor="#B9BBBE"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <!-- SECTION TITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed Work"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+
+    <!-- COMPLETED ASSIGNMENT 1 -->
+
+    <LinearLayout
+        android:id="@+id/completedRow1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#292B2F"
+        android:paddingStart="10dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="3dp">
+
+        <CheckBox
+            android:id="@+id/completedCheckBox1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="#5865F2"
+            android:contentDescription="Assignment completed" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CS 360 — UI Project"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed August 15"
+                android:textColor="#6FD08C"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deleteCompleted1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="X"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:backgroundTint="#4F545C"
+            android:contentDescription="Delete completed assignment" />
+
+    </LinearLayout>
+
+
+    <!-- COMPLETED ASSIGNMENT 2 -->
+
+    <LinearLayout
+        android:id="@+id/completedRow2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#292B2F"
+        android:paddingStart="10dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="3dp">
+
+        <CheckBox
+            android:id="@+id/completedCheckBox2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="#5865F2"
+            android:contentDescription="Assignment completed" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAT 350 — Homework"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed August 17"
+                android:textColor="#6FD08C"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deleteCompleted2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="X"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:backgroundTint="#4F545C"
+            android:contentDescription="Delete completed assignment" />
+
+    </LinearLayout>
+
+
+    <!-- COMPLETED ASSIGNMENT 3 -->
+
+    <LinearLayout
+        android:id="@+id/completedRow3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#292B2F"
+        android:paddingStart="10dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="3dp">
+
+        <CheckBox
+            android:id="@+id/completedCheckBox3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="#5865F2"
+            android:contentDescription="Assignment completed" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENG 101 — Essay"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed August 20"
+                android:textColor="#6FD08C"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deleteCompleted3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="X"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:backgroundTint="#4F545C"
+            android:contentDescription="Delete completed assignment" />
+
+    </LinearLayout>
+
+
+    <!-- EMPTY SPACE -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <!-- BACK TO DASHBOARD -->
+
+    <Button
+        android:id="@+id/backToDashboardButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="BACK TO DASHBOARD"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:backgroundTint="#5865F2"
+        android:layout_marginBottom="12dp" />
+
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#292B2F"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="HOME"
+            android:textColor="#B9BBBE"
+            android:textSize="11sp"
+            android:backgroundTint="#292B2F" />
+
+        <Button
+            android:id="@+id/calendarButton"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="CALENDAR"
+            android:textColor="#B9BBBE"
+            android:textSize="11sp"
+            android:backgroundTint="#292B2F" />
+
+        <Button
+            android:id="@+id/completedButton"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="DONE"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:backgroundTint="#5865F2" />
+
+        <Button
+            android:id="@+id/settingsNavButton"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="SETTINGS"
+            android:textColor="#B9BBBE"
+            android:textSize="11sp"
+            android:backgroundTint="#292B2F" />
+
+    </LinearLayout>
+
+</LinearLayout>

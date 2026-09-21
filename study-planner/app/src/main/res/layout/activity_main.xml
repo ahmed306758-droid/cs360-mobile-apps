@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="#202225">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Study Planner"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in to manage your assignments"
+        android:textColor="#B9BBBE"
+        android:textSize="18sp"
+        android:layout_marginBottom="35dp" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:nextFocusForward="@id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Username"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B9BBBE"
+        android:backgroundTint="#5865F2"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:nextFocusForward="@id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Password"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B9BBBE"
+        android:backgroundTint="#5865F2"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:nextFocusForward="@id/createAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="LOGIN"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#5865F2"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="CREATE ACCOUNT"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4F545C" />
+
+</LinearLayout>
